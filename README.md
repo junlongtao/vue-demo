@@ -1,10 +1,6 @@
 # vue-demo
 
-<<<<<<< HEAD
 > 静态官网 based on vue@2.0
-=======
-> 企业官网 based on vue@2.0
->>>>>>> 84c0505be02cb2d311e8bcce6160039a59719bfb
 
 ## Build Setup
 
