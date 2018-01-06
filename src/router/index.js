@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomePage from '../views/HomePage'
-import HrPage from '../views/HrPage'
-import PlusPage from '../views/PlusPage'
 
 Vue.use(VueRouter)
+const HomePage = () => import('../views/HomePage')
+const HrPage = () => import('../views/HrPage')
+const PlusPage = () => import('../views/PlusPage')
 export default new VueRouter({
   mode: 'history',
   base: __dirname,

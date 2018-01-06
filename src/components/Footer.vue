@@ -4,6 +4,7 @@
       <a href="http://static.zhichou.com/#/about">关于我们</a>
       <a href="http://static.zhichou.com/#/vip">VIP服务</a>
       <a href="http://static.zhichou.com/#/case">成功案例</a>
+      <br/>
       <a href="http://static.zhichou.com/#/media">媒体报道</a>
       <a href="http://static.zhichou.com/#/privacy">隐私条款</a>
       <a href="http://static.zhichou.com/#/contact">联系我们</a>
@@ -11,7 +12,10 @@
     </div>
     <p class="copy-right">
       2018 © 智筹 zhichou.com 版权所有.<br/>
-      京ICP备16005089号-1 京公网安备11010802020162
+      京ICP备16005089号-1 京公网安备11010802020162<br/>
+      <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action">
+        工信部
+      </a>
     </p>
   </footer>
 </template>

@@ -1,6 +1,6 @@
-# vue-demo
+# www.zhichou.com
 
-> 静态官网 based on vue@2.0
+> 智筹静态官网 based on vue@2.0
 
 ## Build Setup
 

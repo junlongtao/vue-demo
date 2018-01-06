@@ -1,20 +1,29 @@
 .zui-header{
-  .line{
-    width: 1px;
-    height: 37px;
+  .zui-button{
     background: #32adc6;
-    display: inline-block;
-    position: relative;
-    top: -5px;
-    left: 10px;
   }
 }
 .plus-page {
+  .mobile-banner{
+    display: none;
+  }
   .banner {
     color: #fff;
     min-height: 270px;
     padding: 100px 0 50px 210px;
-    background: url('../../assets/img/plus-banner.jpg') center no-repeat;
+    background: url('../img/plus-banner.jpg') center no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    img{
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      position: absolute;
+    }
     h5 {
       font-size: 18px;
       line-height: 24px;
@@ -41,10 +50,10 @@
       margin: 40px 0 0 0;
       color: #F7931E;
     }
-    ul{
+    ul {
       max-width: 785px;
       margin: 80px auto;
-      li{
+      li {
         float: left;
         color: #fff;
         margin: 0 45px;
@@ -55,11 +64,11 @@
         background-size: cover;
         height: 200px;
         padding-top: 25px;
-        .big{
+        .big {
           font-size: 40px;
-          margin: 20px 0 0 0;
+          margin-top: 25px;
         }
-        .black{
+        .black {
           color: #000;
           left: 0;
           right: 0;
@@ -68,7 +77,7 @@
         }
       }
     }
-    .ribbon{
+    .ribbon {
       color: #fff;
       font-size: 25px;
       padding-top: 45px;
@@ -80,42 +89,46 @@
       background: url('../img/ribbon.svg') center no-repeat;
     }
   }
-  .more-features{
-    padding:75px 0 75px 28%;
-    li{
-      margin-top: 55px;
-      font-size: 25px;
-      padding-left: 105px;
-      position: relative;
-      img{
-        width: 80px;
-        top: 30px;
-        left: 0;
-        position: absolute;
-      }
-      b{
-        color: #35A3BA;
-        font-size: 79px;
-        margin-right: 20px;
+  .more-features {
+    padding: 0 0 75px 0;
+    ul {
+      margin: 0 auto;
+      max-width: 545px;
+      li {
+        margin-top: 55px;
+        font-size: 25px;
+        padding-left: 105px;
+        position: relative;
+        img {
+          width: 80px;
+          top: 30px;
+          left: 0;
+          position: absolute;
+        }
+        b {
+          color: #35A3BA;
+          font-size: 79px;
+          margin-right: 20px;
+        }
       }
     }
   }
-  .package{
-    background: #D9EEF2;
+  .package {
     padding: 48px 0;
-    h1{
+    background: #D9EEF2;
+    h1 {
       color: #F7931E;
       font-size: 46px;
       text-align: center;
       letter-spacing: 15px;
     }
-    ul{
-      padding-left: 340px;
-      margin-top: 35px;
-      li{
+    ul {
+      margin: 0 auto;
+      max-width: 440px;
+      li {
         margin-top: 25px;
         font-size: 25px;
-        &:before{
+        &:before {
           content: '●';
           color: #35A3BA;
           font-size: 35px;
@@ -123,20 +136,11 @@
         }
       }
     }
-    p{
+    p {
       width: 100%;
       margin: 35px 0;
       font-size: 25px;
       text-align: center;
-    }
-  }
-  .customer-case{
-    .customer-case-carousel{
-      .customer-case-carousel-item{
-        p{
-          padding-left: 170px;
-        }
-      }
     }
   }
   .apply-coupon {
@@ -147,7 +151,7 @@
     h2 {
       font-size: 39px;
       margin: 0 0 20px 0;
-      .yellow{
+      .yellow {
         color: #FFE300;
       }
     }
@@ -161,6 +165,110 @@
     .zui-form {
       max-width: 710px;
       margin: auto;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .plus-page{
+    .banner{
+      display: none;
+    }
+    .mobile-banner{
+      display: block;
+      min-height: 300px;
+      background: #D9EEF2;
+      img{
+        width: 100%;
+      }
+    }
+    .features{
+      padding: 25px 0;
+      h3{
+        font-size: 16px;
+      }
+      h1{
+        font-size: 24px;
+        margin: 20px 0 0 0;
+      }
+      ul{
+        max-width: 335px;
+        margin: 40px auto;
+        li{
+          width: 85px;
+          height: 90px;
+          font-size: 16px;
+          padding-top: 15px;
+          margin: 0 13px;
+          .big{
+            font-size: 20px;
+            margin-top: 0;
+          }
+          .black{
+            bottom: -25px;
+          }
+        }
+      }
+      .ribbon{
+        width: 340px;
+        font-size: 12px;
+        height: 55px;
+        padding-top: 23px;
+      }
+    }
+    .more-features{
+      padding: 0 0 34px 0;
+      ul{
+        max-width: 260px;
+        li{
+          margin-top: 25px;
+          font-size: 13px;
+          padding-left: 55px;
+          img{
+            width: 40px;
+            top: 15px;
+          }
+          b{
+            font-size: 38px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .package{
+      padding: 24px 0;
+      h1{
+        font-size: 23px;
+        letter-spacing: 5px;
+      }
+      ul{
+        max-width: 290px;
+        li{
+          margin-top: 12px;
+          font-size: 14px;
+          &:before{
+            font-size: 14px;
+            margin-right: 10px;
+          }
+        }
+      }
+      p{
+        margin: 17px 0;
+        font-size: 14px;
+      }
+    }
+    .apply-coupon{
+      padding: 25px 0;
+      h2{
+        font-size: 18px;
+        margin: 0 0 10px 0;
+      }
+      h4{
+        font-size: 14px;
+      }
+    }
+    .apply-coupon-form{
+      padding: 0;
     }
   }
 }
